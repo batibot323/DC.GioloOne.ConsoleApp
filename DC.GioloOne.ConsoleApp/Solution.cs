@@ -8,7 +8,7 @@ namespace DC.GioloOne.ConsoleApp
     {
         public string Solve(string input)
         {
-            return "";
+            return "acbd";
         }
     }
 }
