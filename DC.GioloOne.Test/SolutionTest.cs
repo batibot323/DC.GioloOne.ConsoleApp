@@ -18,5 +18,11 @@ namespace DC.GioloOne.Test
         {
             Assert.Equal("acbd", uut.Solve("abcd"));
         }
+
+        [Fact]
+        public void Solve_Given_efgh_ShouldReturn_egfh()
+        {
+            Assert.Equal("egfh", uut.Solve("efgh"));
+        }
     }
 }
