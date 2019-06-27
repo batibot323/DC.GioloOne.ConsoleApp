@@ -8,15 +8,16 @@ namespace DC.GioloOne.ConsoleApp
     {
         public string Solve(string input)
         {
+            string inputWithSpacesRemoved = input.Replace(" ", "");
             string output = null;
-            double rows = Math.Floor(Math.Sqrt(input.Length));
-            double columns = Math.Ceiling(Math.Sqrt(input.Length));
+            double rows = Math.Floor(Math.Sqrt(inputWithSpacesRemoved.Length));
+            double columns = Math.Ceiling(Math.Sqrt(inputWithSpacesRemoved.Length));
 
             for (int i = 0; i < columns; i++)
             {
-                for (int j = i; j < input.Length; j += (int)columns)
+                for (int j = i; j < inputWithSpacesRemoved.Length; j += (int)columns)
                 {
-                    output += input.Substring(j, 1);
+                    output += inputWithSpacesRemoved.Substring(j, 1);
                 }
 
                 if (i < columns - 1)

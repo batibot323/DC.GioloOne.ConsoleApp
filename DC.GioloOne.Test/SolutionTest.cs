@@ -30,5 +30,12 @@ namespace DC.GioloOne.Test
         {
             Assert.Equal("ad be c", uut.Solve("abcde"));
         }
+
+        [Fact(Skip = "Not yet fixed")]
+        public void Solve_Given_input_ShouldReturn_output()
+        {
+
+            Assert.Equal("ad be c", uut.Solve("abcde"));
+        }
     }
 }
