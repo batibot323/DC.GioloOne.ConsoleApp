@@ -8,18 +8,19 @@ namespace DC.GioloOne.ConsoleApp
     {
         public string Solve(string input)
         {
-            string output = "";
+            string output = null;
             double rows = Math.Ceiling(Math.Sqrt(input.Length));
             double columns = Math.Floor(Math.Sqrt(input.Length));
 
-            for (int i = 0; i < columns; i++)
+            for (int i = 0; i < rows; i++)
             {
                 for (int j = i; j < input.Length; j += (int)columns)
                 {
                     output += input.Substring(j, 1);
                 }
 
-                output += " ";
+                if (i < rows - 1)
+                    output += " ";
             }
             return output;
         }
