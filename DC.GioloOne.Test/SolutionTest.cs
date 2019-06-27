@@ -16,7 +16,7 @@ namespace DC.GioloOne.Test
         [Fact]
         public void Solve_Given_abcd_ShouldReturn_ac_bd()
         {
-            Assert.Equal("ac bd", uut.Solve("abcd"));
+            Assert.True("ac bd".Equals(uut.Solve("abcd")));
         }
 
         [Fact]
