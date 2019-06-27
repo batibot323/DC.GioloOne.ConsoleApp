@@ -11,6 +11,7 @@ namespace DC.GioloOne.ConsoleApp
             string output = "";
             output += input.Substring(0, 1);
             output += input.Substring(2, 1);
+            output += " ";
             output += input.Substring(1, 1);
             output += input.Substring(3, 1);
             return output;

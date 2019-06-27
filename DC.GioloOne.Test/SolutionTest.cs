@@ -14,15 +14,21 @@ namespace DC.GioloOne.Test
         }
 
         [Fact]
-        public void Solve_Given_abcd_ShouldReturn_acbd()
+        public void Solve_Given_abcd_ShouldReturn_ac_bd()
         {
-            Assert.Equal("acbd", uut.Solve("abcd"));
+            Assert.Equal("ac bd", uut.Solve("abcd"));
         }
 
         [Fact]
-        public void Solve_Given_efgh_ShouldReturn_egfh()
+        public void Solve_Given_efgh_ShouldReturn_eg_fh()
         {
-            Assert.Equal("egfh", uut.Solve("efgh"));
+            Assert.Equal("eg fh", uut.Solve("efgh"));
+        }
+
+        [Fact]
+        public void Solve_Given_abcde_ShouldReturn_ace_bd()
+        {
+            Assert.Equal("acebd", uut.Solve("abcde"));
         }
     }
 }
