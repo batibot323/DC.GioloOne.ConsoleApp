@@ -6,5 +6,9 @@ namespace DC.GioloOne.ConsoleApp
 {
     public class Solution
     {
+        public string Solve(string input)
+        {
+            return "";
+        }
     }
 }
