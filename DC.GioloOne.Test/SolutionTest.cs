@@ -31,11 +31,12 @@ namespace DC.GioloOne.Test
             Assert.Equal("ad be c", uut.Solve("abcde"));
         }
 
-        [Fact(Skip = "Not yet fixed")]
+        [Fact]
         public void Solve_Given_input_ShouldReturn_output()
         {
-
-            Assert.Equal("ad be c", uut.Solve("abcde"));
+            string input = "if man was meant to stay on the ground god would have given us roots";
+            string output = "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau";
+            Assert.Equal(output, uut.Solve(input));
         }
     }
 }
