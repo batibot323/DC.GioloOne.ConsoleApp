@@ -14,7 +14,7 @@ namespace DC.GioloOne.ConsoleApp
 
             for (int i = 0; i < columns; i++)
             {
-                for (int j = i; j < input.Length; j += (int)rows)
+                for (int j = i; j < input.Length; j += (int)columns)
                 {
                     output += input.Substring(j, 1);
                 }
